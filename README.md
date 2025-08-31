@@ -1,6 +1,6 @@
 # 🎨 Coloréame — MVP (SPA Vanilla)
 
-Coloréame es una aplicación web **SPA sin frameworks** para colorear imágenes (PNG/JPG) usando HTML5 Canvas.  
+Coloréame es una aplicación web **SPA sin frameworks** para colorear imágenes (PNG/JPG) usando HTML5 Canvas.
 Todo funciona **localmente en el navegador**, sin backend, y puede desplegarse fácilmente en **GitHub Pages**.
 
 ## 🚀 Características (MVP)
@@ -16,25 +16,22 @@ Todo funciona **localmente en el navegador**, sin backend, y puede desplegarse f
 / (raíz)
 ├─ index.html
 ├─ /css
-│  ├─ styles.css
-│  ├─ components.css
-│  └─ utilities.css
+│  └─ style.css
 ├─ /js
-│  ├─ app.js
+│  ├─ main.js
 │  ├─ state.js
-│  ├─ /ui
+│  ├─ /tools
 │  ├─ /services
+│  ├─ /ui
 │  └─ /utils
 ├─ /workers
 │  └─ floodFill.js
 ├─ /assets
-│  ├─ samples/
-│  └─ icons/
 ├─ /tests
-│  ├─ index.html
 │  ├─ runner.js
 │  ├─ assert.js
-│  └─ *.test.js
+│  ├─ history.test.js
+│  └─ storage.test.js
 ├─ /docs
 │  ├─ USO.md
 │  └─ TECNICO.md
@@ -43,8 +40,7 @@ Todo funciona **localmente en el navegador**, sin backend, y puede desplegarse f
 
 ## 🧪 Pruebas unitarias
 - Se encuentran en `/tests`.
-- Se ejecutan en el navegador abriendo `tests/index.html`.
-- Orquestadas por `runner.js` con aserciones básicas (`assert`, `equal`, `deepEqual`, `throws`).
+- Se ejecutan con `npm test`.
 
 ## 🌐 Despliegue en GitHub Pages
 1. Sube este repo a GitHub.
