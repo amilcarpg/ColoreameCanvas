@@ -1,0 +1,8 @@
+body { font-family: sans-serif; text-align: center; }
+.gallery .images img { width: 80px; margin: 0 5px; cursor: pointer; border:1px solid #ccc; }
+.toolbar { margin: 10px; }
+.colors { display: inline-block; }
+.colors .color { width: 24px; height: 24px; display: inline-block; cursor: pointer; border:1px solid #000; }
+.drawing-area { margin-top: 10px; }
+.drawing-area svg { max-width: 100%; height: auto; border: 1px solid #000; }
+.tools button { margin: 0 5px; }

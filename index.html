@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Coloreame Canvas</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Coloreame</h1>
+  <div class="gallery">
+    <h2>Galería</h2>
+    <div class="images">
+      <img src="assets/house.svg" alt="Casa" onclick="loadImage('house.svg')" />
+      <img src="assets/flower.svg" alt="Flor" onclick="loadImage('flower.svg')" />
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <div class="colors" id="palette"></div>
+    <div class="tools">
+      <button id="bucket">Bote</button>
+      <button id="eraser">Borrador</button>
+      <button id="undo">Deshacer</button>
+      <button id="redo">Rehacer</button>
+      <button id="export">Exportar</button>
+    </div>
+  </div>
+
+  <div id="drawing-area" class="drawing-area"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
