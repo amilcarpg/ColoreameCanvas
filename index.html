@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Coloréame Canvas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="toolbar" class="toolbar">
+    <select id="gallery">
+      <option value="">Galería</option>
+      <option value="house">Casa</option>
+      <option value="smiley">Carita</option>
+    </select>
+    <input type="file" id="imageLoader" accept="image/png,image/jpeg">
+    <button id="brush">Pincel</button>
+    <button id="bucket">Bote</button>
+    <button id="eraser">Borrador</button>
+    <div id="palette" class="palette"></div>
+    <input type="color" id="colorPicker" value="#000000">
+    <input type="number" id="brushSize" min="1" max="100" value="10">
+    <button id="undo">Deshacer</button>
+    <button id="redo">Rehacer</button>
+    <button id="export">Exportar</button>
+  </div>
+  <canvas id="canvas" width="800" height="600"></canvas>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
